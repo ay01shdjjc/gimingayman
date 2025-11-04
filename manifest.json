@@ -1,0 +1,49 @@
+{
+  "name": "العبدلي جيمينغ - متجر الألعاب الاحترافي",
+  "short_name": "العبدلي جيمينغ",
+  "description": "متجر عالمي متخصص في أجهزة وإكسسوارات الألعاب الاحترافية",
+  "start_url": "index.html",
+  "scope": "./",
+  "display": "standalone",
+  "orientation": "portrait-primary",
+  "theme_color": "#d4af37",
+  "background_color": "#1a1a1a",
+  "categories": ["shopping", "business"],
+  "screenshots": [
+    {
+      "src": "favicon.svg",
+      "sizes": "192x192",
+      "type": "image/svg+xml",
+      "form_factor": "narrow"
+    }
+  ],
+  "icons": [
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any"
+    },
+    {
+      "src": "favicon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "maskable"
+    }
+  ],
+  "shortcuts": [
+    {
+      "name": "متجر المنتجات",
+      "short_name": "المتجر",
+      "description": "استكشف 150+ منتج احترافي",
+      "url": "index.html#products"
+    },
+    {
+      "name": "السلة",
+      "short_name": "سلتي",
+      "description": "عرض سلة التسوق الخاصة بك",
+      "url": "index.html#cart"
+    }
+  ],
+  "prefer_related_applications": false
+}

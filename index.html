@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+  <meta name="description" content="العبدلي جيمينغ - متجر عالمي متخصص في أجهزة وإكسسوارات الألعاب الاحترافية من أفضل الماركات العالمية">
+  <meta name="keywords" content="متجر الكتروني، ألعاب، جيمينغ، إكسسوارات، حاسوب، لابتوب، منصات ألعاب، gaming, laptop, PC">
+  <meta name="theme-color" content="#d4af37">
+  <meta property="og:title" content="العبدلي جيمينغ - متجر متخصص عالمي">
+  <meta property="og:description" content="متجر متخصص في أجهزة وإكسسوارات الألعاب الاحترافية من أفضل الماركات">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="format-detection" content="telephone=yes">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+  
+  <title>العبدلي جيمينغ - متجر متخصص عالمي | 196+ منتج احترافي</title>
+  
+  <link rel="stylesheet" href="styles.css">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <link rel="apple-touch-icon" href="favicon.svg">
+  <link rel="manifest" href="manifest.json">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  
+  <!-- Font Awesome للرموز الاحترافية -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <!-- مكتبات إنشاء PDF من الفاتورة -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/html2canvas/1.4.1/html2canvas.min.js" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js" crossorigin="anonymous"></script>
+  
+  <script>
+    if ('serviceWorker' in navigator) {
+      window.addEventListener('load', () => {
+        navigator.serviceWorker.register('sw.js').catch(() => {});
+      });
+    }
+  </script>
+</head>
+<body>
+  <div class="stars"></div>
+
+  <header class="header">
+    <div class="header-container">
+      <div class="logo-section">
+        <div class="logo-icon"><i class="fas fa-gamepad"></i></div>
+        <div class="brand-name">العبدلي جيمينغ</div>
+      </div>
+
+      <nav class="nav-menu">
+        <a href="#hero" class="nav-link">الرئيسية</a>
+        <a href="#products" class="nav-link">المتجر</a>
+        <a href="#bundles" class="nav-link">الباقات</a>
+        <a href="#contact" class="nav-link">التواصل</a>
+      </nav>
+
+      <div class="header-actions">
+        <select id="currency-select" class="currency-select">
+          <option value="SAR">SAR ر.س (ريال سعودي)</option>
+          <option value="USD">USD $ (دولار أمريكي)</option>
+          <option value="EUR">EUR € (يورو)</option>
+          <option value="AED">AED د.إ (إمارات)</option>
+          <option value="KWD">KWD د.ك (كويت)</option>
+          <option value="YER">YER ر.ي (ريال يمني)</option>
+        </select>
+
+        <button id="theme-toggle" class="theme-btn" title="تبديل الوضع"><i class="fas fa-moon"></i></button>
+        <button class="search-btn" title="بحث"><i class="fas fa-search"></i></button>
+        <button id="cart-btn" class="cart-btn" title="السلة">
+          <i class="fas fa-shopping-cart"></i>
+          <span class="cart-count">0</span>
+        </button>
+        <a href="tel:+967783650750" class="phone-btn" title="اتصل بنا"><i class="fas fa-phone"></i></a>
+      </div>
+    </div>
+  </header>
+
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1>متجر عالمي متخصص في أجهزة وإكسسوارات الألعاب الاحترافية</h1>
+      <p class="hero-subtitle">أكثر من 196 منتج احترافي من أفضل الماركات العالمية مع خدمة عملاء متميزة وأسعار منافسة</p>
+      <div class="hero-buttons">
+        <a href="#products" class="btn-primary">استكشف المتجر</a>
+        <a href="#bundles" class="btn-secondary">اطلع على الباقات</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <div class="feature-icon"><i class="fas fa-bolt"></i></div>
+      <h3>أداء عالي</h3>
+      <p>معالجات وكروت رسومية قوية من أفضل الشركات العالمية</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon"><i class="fas fa-shield"></i></div>
+      <h3>جودة مضمونة</h3>
+      <p>جميع المنتجات أصلية مع ضمان رسمي وشهادات عالمية</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon"><i class="fas fa-rocket"></i></div>
+      <h3>دعم عالمي</h3>
+      <p>فريق معتمد متوفر لمساعدتك 24/7 بلغات متعددة</p>
+    </div>
+    <div class="feature">
+      <div class="feature-icon"><i class="fas fa-dollar-sign"></i></div>
+      <h3>أسعار منافسة</h3>
+      <p>أفضل الأسعار العالمية مع عروض حصرية مميزة</p>
+    </div>
+  </section>
+
+  <section id="products" class="products-section">
+    <h2 class="section-title">متجر المنتجات - 196+ منتج احترافي</h2>
+    <p class="section-subtitle">اختر من أكثر من 196 لابتوب وجهاز PC واكسسوارات جيمينج من أفضل الماركات العالمية</p>
+
+    <div class="filters">
+      <select id="category-filter" class="filter-select">
+        <option value="all">جميع الفئات</option>
+        <option value="laptop">لابتوبات (80+)</option>
+        <option value="pc">أجهزة PC جيمينغ (70+)</option>
+        <option value="accessories">اكسسوارات جيمينج (46+)</option>
+      </select>
+
+      <select id="price-filter" class="filter-select">
+        <option value="all">جميع الأسعار</option>
+        <option value="premium">فئة فاخرة (3000+ ر.س)</option>
+        <option value="mid">فئة متوسطة (1500-3000 ر.س)</option>
+        <option value="entry">فئة اقتصادية (&lt;1500 ر.س)</option>
+      </select>
+
+      <input type="text" id="search-input" class="search-input" placeholder="ابحث عن منتج... اسم، مواصفات، ماركة...">
+    </div>
+
+    <div id="product-grid" class="product-grid"></div>
+
+    <div id="pagination" class="pagination"></div>
+  </section>
+
+  <section id="bundles" class="bundles-section">
+    <h2 class="section-title">الباقات المتكاملة</h2>
+    <p class="section-subtitle">توفير عليك العناء والوقت مع باقات متكاملة احترافية</p>
+    <div id="bundle-grid" class="product-grid"></div>
+  </section>
+
+  <section id="contact" class="products-section" style="background: linear-gradient(135deg, rgba(45, 27, 0, 0.2), rgba(30, 10, 0, 0.2)); border-radius: 15px; padding: 3rem 2rem;">
+    <h2 class="section-title">تواصل معنا</h2>
+    <p class="section-subtitle">نحن هنا في جميع أنحاء العالم لخدمتك</p>
+
+    <div class="footer-content" style="max-width: 1400px; margin: 0 auto;">
+      <div class="footer-section">
+        <h4><i class="fas fa-map-marker-alt"></i> موقعنا الرئيسي</h4>
+        <p>اليمن - عمران</p>
+        <p>غرفة البرج التجاري</p>
+        <p style="font-size: 0.9rem; margin-top: 0.5rem;">خدمة عالمية</p>
+      </div>
+      <div class="footer-section">
+        <h4><i class="fas fa-phone"></i> الاتصال المباشر</h4>
+        <p><a href="tel:783650750">783650750</a></p>
+        <p><a href="tel:+967783650750">+967 78 365 0750</a></p>
+      </div>
+      <div class="footer-section">
+        <h4><i class="fas fa-envelope"></i> البريد الإلكتروني</h4>
+        <p><a href="mailto:sales@alabdali-gaming.com">sales@alabdali-gaming.com</a></p>
+        <p><a href="mailto:support@alabdali-gaming.com">support@alabdali-gaming.com</a></p>
+      </div>
+      <div class="footer-section">
+        <h4><i class="fas fa-clock"></i> ساعات العمل</h4>
+        <p>يومياً من 10:00 صباحاً</p>
+        <p>إلى 11:00 مساءً (التوقيت المحلي)</p>
+      </div>
+    </div>
+  </section>
+
+  <div id="cart-modal" class="cart-modal">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h2><i class="fas fa-shopping-cart"></i> سلة التسوق</h2>
+        <button id="close-modal" class="close-btn" title="إغلاق"><i class="fas fa-times"></i></button>
+      </div>
+
+      <div id="order-details-form" class="order-details-section" style="display:none;">
+        <h3>تفاصيل الطلب</h3>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="customer-name">الاسم الكامل *</label>
+            <input type="text" id="customer-name" placeholder="أدخل اسمك" value="">
+          </div>
+          <div class="form-group">
+            <label for="customer-email">البريد الإلكتروني</label>
+            <input type="email" id="customer-email" placeholder="بريدك الإلكتروني" value="">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="customer-phone">رقم الهاتف *</label>
+            <input type="tel" id="customer-phone" placeholder="رقم هاتفك" value="">
+          </div>
+          <div class="form-group">
+            <label for="customer-country">الدولة</label>
+            <input type="text" id="customer-country" placeholder="اسم الدولة" value="">
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="customer-city">المدينة</label>
+            <input type="text" id="customer-city" placeholder="اسم المدينة" value="">
+          </div>
+          <div></div>
+        </div>
+        <button id="save-details-btn" class="btn-primary" style="width: 100%; margin-top: 1rem;">حفظ البيانات</button>
+      </div>
+
+      <div id="cart-items" class="cart-items"></div>
+
+      <div class="cart-summary">
+        <button id="order-details-btn" class="btn-print" style="width: 100%; margin-bottom: 1rem;"><i class="fas fa-clipboard"></i> إضافة تفاصيل الطلب</button>
+        
+        <div class="summary-row">
+          <span>المجموع الفرعي:</span>
+          <span id="cart-subtotal">0 ر.س</span>
+        </div>
+        <div class="summary-row">
+          <span>الضريبة (15%):</span>
+          <span id="cart-tax">0 ر.س</span>
+        </div>
+        <div class="summary-row">
+          <span>الشحن:</span>
+          <span id="cart-shipping">0 ر.س</span>
+        </div>
+        <div class="summary-row total">
+          <span>الإجمالي النهائي:</span>
+          <span id="cart-total">0 ر.س</span>
+        </div>
+
+        <div class="modal-actions">
+          <button id="checkout-btn" class="btn-primary btn-checkout"><i class="fas fa-print"></i> طباعة الفاتورة</button>
+          <button class="btn-print" onclick="document.getElementById('cart-modal').classList.remove('active')"><i class="fas fa-times"></i> إغلاق</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div style="grid-column: 1 / -1; text-align: center; padding-top: 2rem; border-top: 1px solid rgba(212, 175, 55, 0.2);">
+        <p>© 2025 العبدلي جيمينغ - متجر عالمي متخصص</p>
+        <p style="font-size: 0.9rem; color: #666;">جميع الحقوق محفوظة | بيانات آمنة وموثوقة | متوافق عالمياً</p>
+        <p style="font-size: 0.85rem; color: #555;">تصميم ايمن عبدالملك طه العبدلي ابو سند</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const stars = document.querySelector('.stars');
+      for (let i = 0; i < 50; i++) {
+        const star = document.createElement('div');
+        star.className = 'star';
+        star.style.left = Math.random() * 100 + '%';
+        star.style.top = Math.random() * 100 + '%';
+        star.style.animationDelay = Math.random() * 3 + 's';
+        stars.appendChild(star);
+      }
+    });
+  </script>
+</body>
+</html>

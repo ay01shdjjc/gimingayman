@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Create Favicon</title>
+</head>
+<body>
+<canvas id="canvas" width="32" height="32"></canvas>
+<script>
+const canvas = document.getElementById('canvas');
+const ctx = canvas.getContext('2d');
+
+// Background gradient
+const grad = ctx.createLinearGradient(0, 0, 32, 32);
+grad.addColorStop(0, '#6c58ff');
+grad.addColorStop(1, '#2d9dff');
+ctx.fillStyle = grad;
+ctx.fillRect(0, 0, 32, 32);
+
+// Draw gaming icon
+ctx.fillStyle = '#fff';
+ctx.beginPath();
+ctx.moveTo(16, 8);
+ctx.lineTo(24, 12);
+ctx.lineTo(24, 20);
+ctx.lineTo(16, 24);
+ctx.lineTo(8, 20);
+ctx.lineTo(8, 12);
+ctx.closePath();
+ctx.fill();
+
+// Center dot
+ctx.fillStyle = '#6c58ff';
+ctx.beginPath();
+ctx.arc(16, 16, 3, 0, Math.PI * 2);
+ctx.fill();
+
+// Download as PNG
+canvas.toBlob(blob => {
+  const url = URL.createObjectURL(blob);
+  const a = document.createElement('a');
+  a.href = url;
+  a.download = 'favicon.png';
+  a.click();
+  URL.revokeObjectURL(url);
+});
+</script>
+</body>
+</html>
